@@ -1,0 +1,9 @@
+<div *ngFor="let item of scores; index as i">
+  <app-flag
+    [flag_url]="flag_url"
+    [score]="scores[i]"
+    [delay]="timings[i]"
+    [radius]="radius"
+  >
+  </app-flag>
+</div>

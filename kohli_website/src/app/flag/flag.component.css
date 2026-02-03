@@ -1,0 +1,17 @@
+.size_constraint {
+  position: fixed;
+  top: 80%;
+  left: 40%;
+  animation: spin 160s var(--delay, 0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
+  transform: rotate(0) translate(var(--radius)) rotate(0);
+  text-align: center;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(-1turn) translate(var(--radius)) rotate(1turn);
+  }
+}
+.score_class {
+  color: red;
+  background-color: white;
+}
